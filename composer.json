@@ -1,0 +1,33 @@
+{
+    "name": "amtgard/environment-loader",
+    "description": "Environment-agnostic PHP include path selection for composition roots (Registry + Strategy).",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/amtgard/environment-loader",
+    "require": {
+        "php": "^8.1",
+        "amtgard/builder-traits": "^1.0",
+        "jedibc/optional": "^1.0",
+        "psr/log": "^3.0"
+    },
+    "require-dev": {
+        "monolog/monolog": "^3.7",
+        "phpunit/phpunit": "^11.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Amtgard\\EnvironmentLoader\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Amtgard\\EnvironmentLoader\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
